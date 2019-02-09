@@ -22,6 +22,9 @@ class DetailViewController: UIViewController {
 
         if let toDoItem = toDoItem { //Evaluates if nil or not nil to pass from holding variable
             toDoField.text = toDoItem
+            self.navigationItem.title = "Edit To Do Item"
+        } else {
+            self.navigationItem.title = "New To Do Item"
         }
         if let toDoNoteItem = toDoNoteItem {
             toDoNoteView.text = toDoNoteItem
